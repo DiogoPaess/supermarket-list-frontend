@@ -10,7 +10,6 @@
   background-color: #f2f4ff;
   border-radius: 12px;
   margin-bottom: 24px;
-  cursor: pointer;
 }
 
 .checkbox {
@@ -44,4 +43,5 @@
   width: 6px;
   height: 12px;
   object-fit: contain;
+  cursor: pointer;
 }

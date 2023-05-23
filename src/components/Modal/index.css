@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 58vh;
+  width: 60vh;
   background-color: white;
   align-items: center;
   padding-top: 16px;
@@ -52,4 +52,24 @@
   width: 100%;
   justify-content: space-between;
   margin-top: 48vh;
+}
+
+@media screen and (max-width: 830px) {
+  .modal-content {
+    width: 45vh;
+  }
+  .buttons-container {
+    height: 28px;
+    margin-top: 30vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .modal-content {
+    width: 40vh;
+  }
+  .buttons-container {
+    height: 18vh;
+    margin-top: 30vh;
+  }
 }

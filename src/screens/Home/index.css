@@ -41,6 +41,41 @@
 }
 
 .home-screen-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 360px;
   margin-top: 24px;
+}
+
+@media screen and (max-width: 420px) {
+  .home-screen-content-container {
+    max-width: 420px;
+    max-height: 700px;
+  }
+  .home-screen-button-container {
+    width: 320px;
+    margin-top: 8px;
+  }
+  .shopping-bag-image {
+    width: 160px;
+    height: auto;
+  }
+  .home-screen-subtitle-description {
+    max-width: 310px;
+  }
+  .home-screen-title {
+    max-width: 310px;
+  }
+
+  .home-screen-subtitle {
+    max-width: 310px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .home-screen-container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 }
