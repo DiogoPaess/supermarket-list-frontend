@@ -1,0 +1,32 @@
+import styled from 'styled-components'
+
+export const ButtonContainer = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Avenir';
+  border-radius: 24px;
+  height: 36px;
+  border: 0px;
+  cursor: pointer;
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme, outline }) =>
+    outline ? theme.colors.light : theme.colors.primary};
+  color: ${({ theme, outline }) =>
+    outline ? theme.colors.primary : theme.colors.light};
+  margin-bottom: 15px;
+
+  @media (max-width: 420px) {
+    max-width: 250px;
+  }
+`
+export const ButtonIcon = styled.img`
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+  margin-right: 6px;
+`
