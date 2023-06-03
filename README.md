@@ -1,6 +1,7 @@
 ## Supermarket List App
 
 This is an application build using React.js, with the goal of make easier create supermarket lists.
+It was used the Atomic Design Concept to organize the components.
 
 <p>
   <img height="500" src="https://github.com/DiogoPaess/supermarket-list-frontend/blob/master/public/images/demo.gif.gif" />
@@ -9,8 +10,11 @@ This is an application build using React.js, with the goal of make easier create
 ## Technologies Used
 
 - React.js
-- CSS
+- Styled Components
 - Axios
+- Eslint
+- Prettier
+- Absolute Imports
 
 ## Requirements to run:
 

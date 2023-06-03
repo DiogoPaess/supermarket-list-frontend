@@ -29,3 +29,10 @@ export const SubTitle = styled.h3`
     margin-bottom: ${({ mb }) => mb || 24}px;
   }
 `
+
+export const SmallText = styled.span`
+  text-align: ${({ align }) => align || 'center'};
+  font-size: ${({ fonteSize }) => fonteSize || 12}px;
+  margin-bottom: ${({ mb }) => mb || 0}px;
+  font-weight: ${({ fonteWeight }) => fonteWeight || 500};
+`
