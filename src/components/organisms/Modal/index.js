@@ -31,7 +31,7 @@ export const Modal = ({ onClose, item }) => {
     const validate = validateBeforeSave()
     if (validate) {
       const result = await createItem({ name, quantity: Number(quantity) })
-      if (result?.erro) {
+      if (!result?.error) {
         alert('Item salvo com sucesso')
         onClose()
       }
@@ -40,8 +40,8 @@ export const Modal = ({ onClose, item }) => {
 
   const callDeleteItem = async () => {
     const result = await deleteItem(item?._id)
-    if (!result?.erro) {
-      alert('Item atualizado com sucesso')
+    if (!result?.error) {
+      alert('Item deletado com sucesso')
       onClose()
     }
   }
@@ -49,12 +49,12 @@ export const Modal = ({ onClose, item }) => {
   const callUpdateItem = async () => {
     const validate = validateBeforeSave()
     if (validate) {
-      const result = await updadeItem(item._id, {
+      const result = await updadeItem(item?._id, {
         name,
         quantity: Number(quantity),
         checked: item?.checked
       })
-      if (!result?.erro) {
+      if (!result?.error) {
         alert('Item atualizado com sucesso')
         onClose()
       }

@@ -29,10 +29,7 @@ export const TextContainer = styled.div`
   flex-direction: column;
 `
 
-export const ArrowIconContainer = styled.div.attrs({
-  src: '/images/arrow.svg',
-  alt: 'arrow-icon'
-})`
+export const ArrowIconContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -40,7 +37,10 @@ export const ArrowIconContainer = styled.div.attrs({
   width: 10%;
   cursor: pointer;
 `
-export const ArrowIcon = styled.img`
+export const ArrowIcon = styled.img.attrs({
+  src: '/images/arrow.svg',
+  alt: 'arrow-icon'
+})`
   width: 6px;
   height: 12px;
   object-fit: contain;

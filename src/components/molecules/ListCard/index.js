@@ -1,5 +1,3 @@
-import './index.css'
-
 import {
   CardContainer,
   CheckImage,
@@ -9,19 +7,19 @@ import {
 } from './styles'
 import { SmallText } from 'components/atoms'
 
-export const ListCard = ({ item, onClick }) => {
+export const ListCard = ({ item, onClick, onCheckItem }) => {
   return (
-    <CardContainer onClick={() => onClick(item)}>
+    <CardContainer onClick={() => onCheckItem(item)}>
       <CheckImage
         src={`/images/${item?.checked ? 'checked.svg' : 'unchecked.svg'}`}
         alt="checked-item"
       />
       <TextContainer>
         <SmallText fontSize={16} align="left" mb={2}>
-          {item.name}
+          {item?.name}
         </SmallText>
         <SmallText fontSize={14} fontWeight={400} align="left">
-          {item.quantity} unidades
+          {item?.quantity} unidades
         </SmallText>
       </TextContainer>
       <ArrowIconContainer onClick={() => onClick(item)}>

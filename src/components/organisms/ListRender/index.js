@@ -14,7 +14,7 @@ export const ListRender = ({ list, onEdit, onCheckItem }) => {
 
   return (
     <ListRenderContainer>
-      {list.map((item) => (
+      {list?.map((item) => (
         <ListCard
           onCheckItem={onCheckItem}
           onClick={onEdit}

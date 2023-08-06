@@ -29,7 +29,7 @@ export const ModalContentContainer = styled.div`
   }
 
   @media (max-width: 420px) {
-    width: 40vh;
+    width: 42vh;
   }
 `
 export const ModalHeaderContainer = styled.div`
@@ -40,12 +40,12 @@ export const ModalHeaderContainer = styled.div`
   width: 100%;
   margin-bottom: 24px;
 `
-export const ModalCloseButton = styled.div`
+export const ModalCloseButton = styled.button`
   height: 24px;
   width: 24px;
   background-color: transparent;
   border: 0px;
-  background-image: url('../../../public/images/close.svg');
+  background-image: url('images/close.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -62,5 +62,6 @@ export const ButtonsContainer = styled.div`
   @media (max-width: 420px) {
     height: 18vh;
     margin-top: 30vh;
+    margin-left: 18px;
   }
 `

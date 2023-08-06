@@ -39,7 +39,7 @@ export const deleteItem = async (id) => {
     const result = await api.delete(`/list-item/${id}`)
     return result.data
   } catch (error) {
-    alert('Error ao deletar item')
+    alert('Error ao deletar novo item')
     return { error }
   }
 }

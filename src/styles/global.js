@@ -23,15 +23,17 @@ export const GlobalStyle = createGlobalStyle`
   src: url("/public/fonts/AvenirNext-Medium.ttf");
   font-weight: 500;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+
 body {
   margin: 0;
   font-family: "Avenir Next";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 ::-webkit-scrollbar {
